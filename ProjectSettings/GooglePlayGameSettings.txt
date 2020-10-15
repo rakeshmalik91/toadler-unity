@@ -1,0 +1,9 @@
+lastUpgrade=00930
+proj.AppId=598056537326
+and.BundleId=com.RakeshMalik.FooW
+proj.classDir=Assets%2fScripts
+proj.ConstantsClassName=GPGSConstants
+and.ResourceData=%3c%3fxml+version%3d%221.0%22+encoding%3d%22utf-8%22%3f%3e%0a%3c%21--%0aGoogle+Play+game+services+IDs.%0aSave+this+file+as+res%2fvalues%2fgames-ids.xml+in+your+project.%0a--%3e%0a%3cresources%3e%0a++%3cstring+name%3d%22app_id%22%3e598056537326%3c%2fstring%3e%0a++%3cstring+name%3d%22package_name%22%3ecom.RakeshMalik.FooW%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_toddler_toadler%22%3eCgkI7pnK97MREAIQAQ%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_young_toadler%22%3eCgkI7pnK97MREAIQAg%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_adult_toadler%22%3eCgkI7pnK97MREAIQAw%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_experienced_toadler%22%3eCgkI7pnK97MREAIQBA%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_sturdy%22%3eCgkI7pnK97MREAIQBg%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_resilient%22%3eCgkI7pnK97MREAIQBw%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_determined%22%3eCgkI7pnK97MREAIQCA%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_lucky%22%3eCgkI7pnK97MREAIQCQ%3c%2fstring%3e%0a++%3cstring+name%3d%22achievement_collector%22%3eCgkI7pnK97MREAIQCg%3c%2fstring%3e%0a++%3cstring+name%3d%22leaderboard_high_score%22%3eCgkI7pnK97MREAIQBQ%3c%2fstring%3e%0a++%3cstring+name%3d%22leaderboard_time_for_200%22%3eCgkI7pnK97MREAIQCw%3c%2fstring%3e%0a++%3cstring+name%3d%22leaderboard_time_for_500%22%3eCgkI7pnK97MREAIQDA%3c%2fstring%3e%0a%3c%2fresources%3e%0a
+and.ClientId=
+proj.requireGPlus=false
+android.SetupDone=true
