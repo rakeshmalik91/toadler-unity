@@ -1,21 +1,30 @@
 fileFormatVersion: 2
 guid: 8daf820ae325241bf9de6d97326f1239
-timeCreated: 1451578373
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: frog_jump_0
-    21300002: frog_jump_1
-    21300004: frog_jump_2
-    21300006: frog_jump_3
-  serializedVersion: 2
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: frog_jump_0
+  - first:
+      213: 21300002
+    second: frog_jump_1
+  - first:
+      213: 21300004
+    second: frog_jump_2
+  - first:
+      213: 21300006
+    second: frog_jump_3
+  externalObjects: {}
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -23,38 +32,97 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    serializedVersion: 2
+    filterMode: 1
     aniso: 16
-    mipBias: -1
-    wrapMode: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: frog_jump_0
+    - serializedVersion: 2
+      name: frog_jump_0
       rect:
         serializedVersion: 2
         x: 0
@@ -64,63 +132,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: -255}
-        - {x: -19, y: -256}
-        - {x: 19, y: -256}
-        - {x: 18, y: -252}
-        - {x: -13, y: -252}
-        - {x: -17, y: -253}
-      - - {x: 256, y: -21}
-        - {x: 240, y: 5}
-        - {x: 190, y: -6}
-        - {x: 137, y: -55}
-        - {x: 100, y: -24}
-        - {x: 195, y: 98}
-        - {x: 248, y: 144}
-        - {x: 194, y: 210}
-        - {x: 114, y: 210}
-        - {x: 81, y: 190}
-        - {x: 73, y: 133}
-        - {x: 77, y: 163}
-        - {x: 26, y: 210}
-        - {x: -19, y: 210}
-        - {x: -63, y: 177}
-        - {x: -74, y: 162}
-        - {x: -74, y: 155}
-        - {x: -72, y: 138}
-        - {x: -80, y: 118}
-        - {x: -73, y: 140}
-        - {x: -75, y: 155}
-        - {x: -99, y: 160}
-        - {x: -98, y: 163}
-        - {x: -96, y: 170}
-        - {x: -109, y: 188}
-        - {x: -130, y: 183}
-        - {x: -132, y: 173}
-        - {x: -149, y: 190}
-        - {x: -160, y: 210}
-        - {x: -204, y: 210}
-        - {x: -256, y: 147}
-        - {x: -256, y: 125}
-        - {x: -208, y: 119}
-        - {x: -139, y: 29}
-        - {x: -69, y: 50}
-        - {x: -101, y: -24}
-        - {x: -137, y: -54}
-        - {x: -197, y: -4}
-        - {x: -245, y: -7}
-        - {x: -250, y: -15}
-        - {x: -256, y: -31}
-        - {x: -256, y: -91}
-        - {x: -102, y: -225}
-        - {x: -77, y: -216}
-        - {x: -31, y: -227}
-        - {x: 69, y: -227}
-        - {x: 98, y: -221}
-        - {x: 168, y: -178}
-        - {x: 256, y: -91}
-    - name: frog_jump_1
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_jump_1
       rect:
         serializedVersion: 2
         x: 512
@@ -130,60 +154,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: -250}
-        - {x: -24, y: -254}
-        - {x: -24, y: -256}
-        - {x: 24, y: -256}
-        - {x: 24, y: -255}
-        - {x: 23, y: -250}
-      - - {x: 87, y: -45}
-        - {x: 107, y: 1}
-        - {x: 87, y: 77}
-        - {x: 147, y: 60}
-        - {x: 247, y: 174}
-        - {x: 247, y: 180}
-        - {x: 195, y: 243}
-        - {x: 115, y: 243}
-        - {x: 82, y: 223}
-        - {x: 74, y: 166}
-        - {x: 78, y: 196}
-        - {x: 27, y: 243}
-        - {x: -18, y: 243}
-        - {x: -62, y: 210}
-        - {x: -73, y: 195}
-        - {x: -73, y: 188}
-        - {x: -71, y: 171}
-        - {x: -79, y: 151}
-        - {x: -72, y: 173}
-        - {x: -74, y: 188}
-        - {x: -98, y: 193}
-        - {x: -97, y: 196}
-        - {x: -95, y: 203}
-        - {x: -108, y: 221}
-        - {x: -131, y: 218}
-        - {x: -151, y: 243}
-        - {x: -207, y: 243}
-        - {x: -254, y: 197}
-        - {x: -254, y: 188}
-        - {x: -138, y: 62}
-        - {x: -96, y: 2}
-        - {x: -193, y: -40}
-        - {x: -218, y: -56}
-        - {x: -237, y: -72}
-        - {x: -223, y: -60}
-        - {x: -240, y: -71}
-        - {x: -254, y: -81}
-        - {x: -254, y: -94}
-        - {x: -246, y: -109}
-        - {x: -221, y: -150}
-        - {x: 156, y: -168}
-        - {x: 173, y: -173}
-        - {x: 215, y: -173}
-        - {x: 247, y: -151}
-        - {x: 247, y: -99}
-        - {x: 228, y: -68}
-    - name: frog_jump_2
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_jump_2
       rect:
         serializedVersion: 2
         x: 0
@@ -193,51 +176,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 214, y: -159}
-        - {x: 212, y: -159}
-        - {x: 226, y: -160}
-        - {x: 228, y: -166}
-        - {x: 239, y: -170}
-        - {x: 249, y: -160}
-        - {x: 254, y: -147}
-        - {x: 240, y: -133}
-        - {x: 244, y: 198}
-        - {x: 172, y: 254}
-        - {x: 132, y: 250}
-        - {x: 75, y: 229}
-        - {x: 75, y: 189}
-        - {x: 74, y: 216}
-        - {x: 64, y: 228}
-        - {x: 41, y: 256}
-        - {x: -30, y: 256}
-        - {x: -79, y: 240}
-        - {x: -74, y: 216}
-        - {x: -71, y: 200}
-        - {x: -79, y: 176}
-        - {x: -75, y: 189}
-        - {x: -74, y: 210}
-        - {x: -99, y: 215}
-        - {x: -69, y: 256}
-        - {x: -221, y: 256}
-        - {x: -243, y: 242}
-        - {x: -256, y: 46}
-        - {x: -256, y: -153}
-        - {x: -238, y: -169}
-        - {x: -225, y: -164}
-        - {x: -224, y: -158}
-        - {x: -210, y: -157}
-        - {x: -212, y: -157}
-        - {x: -238, y: -171}
-        - {x: -253, y: -176}
-        - {x: -256, y: -189}
-        - {x: -256, y: -199}
-        - {x: -252, y: -210}
-        - {x: 252, y: -210}
-        - {x: 256, y: -205}
-        - {x: 256, y: -180}
-        - {x: 248, y: -175}
-    - name: frog_jump_3
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_jump_3
       rect:
         serializedVersion: 2
         x: 512
@@ -247,47 +198,37 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 225, y: 235}
-        - {x: 208, y: 256}
-        - {x: 99, y: 256}
-        - {x: 76, y: 223}
-        - {x: 74, y: 210}
-        - {x: 75, y: 197}
-        - {x: 80, y: 193}
-        - {x: 79, y: 184}
-        - {x: 71, y: 207}
-        - {x: 74, y: 222}
-        - {x: 71, y: 245}
-        - {x: 34, y: 256}
-        - {x: -49, y: 256}
-        - {x: -81, y: 224}
-        - {x: -70, y: 204}
-        - {x: -80, y: 184}
-        - {x: -118, y: 147}
-        - {x: -74, y: 196}
-        - {x: -75, y: 210}
-        - {x: -77, y: 214}
-        - {x: -80, y: 217}
-        - {x: -98, y: 218}
-        - {x: -95, y: 228}
-        - {x: -107, y: 246}
-        - {x: -157, y: 256}
-        - {x: -175, y: 256}
-        - {x: -225, y: 228}
-        - {x: -225, y: 121}
-        - {x: -166, y: -39}
-        - {x: -111, y: -242}
-        - {x: -81, y: -256}
-        - {x: -41, y: -256}
-        - {x: -3, y: -209}
-        - {x: 48, y: -256}
-        - {x: 114, y: -256}
-        - {x: 127, y: -251}
-        - {x: 141, y: -48}
-        - {x: 225, y: 118}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-  spritePackingTag: 
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      frog_jump_0: 21300000
+      frog_jump_1: 21300002
+      frog_jump_2: 21300004
+      frog_jump_3: 21300006
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

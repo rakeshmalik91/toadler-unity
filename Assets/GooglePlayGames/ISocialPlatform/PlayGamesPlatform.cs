@@ -379,6 +379,32 @@ namespace GooglePlayGames
         }
 
         /// <summary>
+        ///  Provided for compatibility with ISocialPlatform.
+        /// </summary>
+        /// <seealso cref="Authenticate(Action&lt;bool&gt;,bool)"/>
+        /// <param name="unused">Unused parameter for this implementation.</param>
+        /// <param name="callback">Callback invoked when complete.</param>
+        public void Authenticate(ILocalUser unused, Action<bool, string> callback)
+        {
+            Authenticate(callback);
+        }
+
+        /// <summary>
+        /// Authenticate the local user with the Google Play Games service.
+        /// </summary>
+        /// <param name='callback'>
+        /// The callback to call when authentication finishes. It will be called
+        /// with <c>true</c> if authentication was successful, <c>false</c>
+        /// otherwise.
+        /// </param>
+        public void Authenticate(Action<bool, string> callback)
+        {
+            Authenticate((bool success) => {
+                callback(success, success ? null : "Authentication failed");
+            }, false);
+        }
+
+        /// <summary>
         /// Determines whether the user is authenticated.
         /// </summary>
         /// <returns>

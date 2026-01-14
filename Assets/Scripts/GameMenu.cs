@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.Advertisements;
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
 using UnityEngine.SocialPlatforms;
@@ -23,10 +22,10 @@ public class GameMenu : MonoBehaviour {
 		paused = value;
 		GameObject.Find ("ButtonPlay").GetComponent<UnityEngine.UI.Button> ().interactable = true;
 		GameObject.Find ("ButtonPlay").transform.GetChild (0).gameObject.SetActive (false);
-		GameObject.Find ("ButtonPlay").transform.FindChild ("Text").GetComponent<UnityEngine.UI.Text> ().text = "Continue";
-		GameObject.Find ("ButtonPlay").transform.FindChild ("Text").GetComponent<UnityEngine.UI.Text> ().color = Util.SetAlpha(1f, GameObject.Find ("ButtonPlay").transform.FindChild ("Text").GetComponent<UnityEngine.UI.Text> ().color);
+		GameObject.Find ("ButtonPlay").transform.Find ("Text").GetComponent<UnityEngine.UI.Text> ().text = "Continue";
+		GameObject.Find ("ButtonPlay").transform.Find ("Text").GetComponent<UnityEngine.UI.Text> ().color = Util.SetAlpha(1f, GameObject.Find ("ButtonPlay").transform.Find ("Text").GetComponent<UnityEngine.UI.Text> ().color);
 		GameObject.Find ("ButtonRetry").GetComponent<UnityEngine.UI.Button> ().interactable = true;
-		GameObject.Find ("ButtonRetry").transform.FindChild ("Text").GetComponent<UnityEngine.UI.Text> ().color = Util.SetAlpha(1f, GameObject.Find ("ButtonRetry").transform.FindChild ("Text").GetComponent<UnityEngine.UI.Text> ().color);
+		GameObject.Find ("ButtonRetry").transform.Find ("Text").GetComponent<UnityEngine.UI.Text> ().color = Util.SetAlpha(1f, GameObject.Find ("ButtonRetry").transform.Find ("Text").GetComponent<UnityEngine.UI.Text> ().color);
 
 		if (!paused && frog.GetComponent<Frog>().IsDead ()) {
 			Life.life--;
@@ -57,8 +56,6 @@ public class GameMenu : MonoBehaviour {
 		Life.lifeUsedInCurrentGame = 0;
 		paused = false;
 
-		ShowAd ();
-
 		startTime = Time.time;
 	}
 
@@ -76,48 +73,8 @@ public class GameMenu : MonoBehaviour {
 
 
 	//---------------------------------------------------- Unity Ads Services ----------------------
+    // Ads removed as per request.
 
-	public void ShowAd() {
-		if (Random.Range (0f, 1f) < 0.2f && Advertisement.IsReady ()) {
-			Advertisement.Show ();
-		}
-	}
-
-	public void ShowRewardedAd() {
-		if (Advertisement.IsReady ("rewardedVideo")) {
-			var options = new ShowOptions { resultCallback = HandleShowAdResult };
-			Advertisement.Show ("rewardedVideo", options);
-		} else {
-			UnityEngine.UI.Text error = GameObject.Find ("TextVideoError").GetComponent <UnityEngine.UI.Text>();
-			error.color = new Color (error.color.r, error.color.g, error.color.b, 1f);
-		}
-
-		if (GameObject.Find ("ButtonRetry").GetComponent<UnityEngine.UI.Button> ().interactable) {
-			GameObject.Find ("ButtonPlay").GetComponent<UnityEngine.UI.Button> ().interactable = false;
-			GameObject.Find ("ButtonPlay").transform.GetChild (0).gameObject.SetActive (false);
-			GameObject.Find ("ButtonPlay").transform.FindChild ("Text").GetComponent<UnityEngine.UI.Text> ().color = Util.SetAlpha(0.5f, GameObject.Find ("ButtonPlay").transform.FindChild ("Text").GetComponent<UnityEngine.UI.Text> ().color);
-		}
-	}
-
-	private void HandleShowAdResult(ShowResult result) {
-		switch (result) {
-		case ShowResult.Finished:
-			Debug.Log ("The ad was successfully shown.");
-			Life.life++;
-			ReportGPGSProgress ();
-			Life.lifeUsedInCurrentGame = 0;
-			Life.lifeCollectedInCurrentGame = 0;
-			PlayerPrefs.SetInt ("life", Life.life);
-			PlayerPrefs.Save ();
-			break;
-		case ShowResult.Skipped:
-			Debug.Log("The ad was skipped before reaching the end.");
-			break;
-		case ShowResult.Failed:
-			Debug.LogError("The ad failed to be shown.");
-			break;
-		}
-	}
 
 
 

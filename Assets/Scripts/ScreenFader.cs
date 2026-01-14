@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ScreenFader : MonoBehaviour {
 
@@ -42,7 +41,7 @@ public class ScreenFader : MonoBehaviour {
 			GetComponent<CanvasGroup> ().alpha += Time.deltaTime / fadeInTime;
 			if (GetComponent<CanvasGroup> ().alpha >= 1f) {
 				GetComponent<CanvasGroup> ().alpha = 1f;
-				Application.LoadLevel (sceneToLoadOnFadeOut);
+				SceneManager.LoadScene (sceneToLoadOnFadeOut);
 			}
 			break;
 		}

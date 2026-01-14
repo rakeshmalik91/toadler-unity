@@ -52,7 +52,7 @@ namespace GooglePlayGames.Editor
 
             if (mBundleId.Trim().Length == 0)
             {
-                mBundleId = PlayerSettings.bundleIdentifier;
+                mBundleId = PlayerSettings.applicationIdentifier;
             }
         }
 
@@ -222,7 +222,7 @@ namespace GooglePlayGames.Editor
                 {
                     // get from settings
                     bundleId = GPGSProjectSettings.Instance.Get(GPGSUtil.IOSBUNDLEIDKEY);
-                    PlayerSettings.bundleIdentifier = bundleId;
+                    PlayerSettings.applicationIdentifier = bundleId;
                 }
                 return PerformSetup(GPGSProjectSettings.Instance.Get(GPGSUtil.IOSCLIENTIDKEY),
                     bundleId, webClientId, nearbySvcId, requiresGooglePlus);

@@ -217,14 +217,14 @@ public class Frog : MonoBehaviour {
 
 		if (Life.life > 0) {
 			GameObject.Find ("ButtonPlay").GetComponent<UnityEngine.UI.Button> ().interactable = true;
-			GameObject.Find ("ButtonPlay").transform.FindChild ("Life").gameObject.SetActive (true);
-			GameObject.Find ("ButtonPlay").transform.FindChild ("Text").GetComponent<UnityEngine.UI.Text> ().text = "Continue";
-			GameObject.Find ("ButtonPlay").transform.FindChild ("Text").GetComponent<UnityEngine.UI.Text> ().color = Util.SetAlpha(1f, GameObject.Find ("ButtonPlay").transform.FindChild ("Text").GetComponent<UnityEngine.UI.Text> ().color);
+			GameObject.Find ("ButtonPlay").transform.Find ("Life").gameObject.SetActive (true);
+			GameObject.Find ("ButtonPlay").transform.Find ("Text").GetComponent<UnityEngine.UI.Text> ().text = "Continue";
+			GameObject.Find ("ButtonPlay").transform.Find ("Text").GetComponent<UnityEngine.UI.Text> ().color = Util.SetAlpha(1f, GameObject.Find ("ButtonPlay").transform.Find ("Text").GetComponent<UnityEngine.UI.Text> ().color);
 		} else {
 			GameObject.Find ("ButtonPlay").GetComponent<UnityEngine.UI.Button> ().interactable = false;
-			GameObject.Find ("ButtonPlay").transform.FindChild ("Life").gameObject.SetActive (false);
-			GameObject.Find ("ButtonPlay").transform.FindChild ("Text").GetComponent<UnityEngine.UI.Text> ().text = "Play";
-			GameObject.Find ("ButtonPlay").transform.FindChild ("Text").GetComponent<UnityEngine.UI.Text> ().color = Util.SetAlpha(0.5f, GameObject.Find ("ButtonPlay").transform.FindChild ("Text").GetComponent<UnityEngine.UI.Text> ().color);
+			GameObject.Find ("ButtonPlay").transform.Find ("Life").gameObject.SetActive (false);
+			GameObject.Find ("ButtonPlay").transform.Find ("Text").GetComponent<UnityEngine.UI.Text> ().text = "Play";
+			GameObject.Find ("ButtonPlay").transform.Find ("Text").GetComponent<UnityEngine.UI.Text> ().color = Util.SetAlpha(0.5f, GameObject.Find ("ButtonPlay").transform.Find ("Text").GetComponent<UnityEngine.UI.Text> ().color);
 		}
 		GameObject.Find ("ButtonRetry").GetComponent<UnityEngine.UI.Button> ().interactable = true;
 

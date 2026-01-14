@@ -58,6 +58,15 @@ namespace GooglePlayGames
         }
 
         /// <summary>
+        /// Authenticates the local user. Equivalent to calling
+        /// <see cref="PlayGamesPlatform.Authenticate" />.
+        /// </summary>
+        public void Authenticate(Action<bool, string> callback)
+        {
+            mPlatform.Authenticate(callback);
+        }
+
+        /// <summary>
         /// Loads all friends of the authenticated user.
         /// </summary>
         public void LoadFriends(Action<bool> callback)
